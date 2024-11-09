@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 project(ustd)
 
-set(TOP_LEVEL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include)
+set(TOP_LEVEL_INCLUDE_DIR ${CMAKE_CURRENT_LIST_DIR}/include)
 
 
 add_library(ustd INTERFACE)
