@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.15)
 project(ustd)
 
 set(TOP_LEVEL_INCLUDE_DIR ${CMAKE_CURRENT_LIST_DIR}/include)
