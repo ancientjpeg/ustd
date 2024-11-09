@@ -2,7 +2,7 @@
  * @file expected.h
  * @author Jackson Kaplan (jackson@minimal.audio)
  * @date 2024-11-09
- * Copyright © 2024 Jackson Kaplan. All rights reserved.
+ * Copyright (c) 2024. All rights reserved.
  */
 
 #ifndef USTD_EXPECTED_H_
