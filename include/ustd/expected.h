@@ -5,11 +5,12 @@
  * Copyright © 2024 Jackson Kaplan. All rights reserved.
  */
 
-#ifndef USTD_EXPECTEd_H_
-#define USTD_EXPECTEd_H_
+#ifndef USTD_EXPECTED_H_
+#define USTD_EXPECTED_H_
 
 #include <iostream>
 #include <string>
+#include <variant>
 
 namespace ustd {
 struct unexpected {
@@ -70,6 +71,29 @@ public:
 
 private:
   std::variant<std::string, T> value_;
+};
+
+template <>
+class expected<void> final : public __expected_base {
+
+public:
+  using type = void;
+
+  expected() : __expected_base(true)
+  {
+  }
+
+  expected(unexpected failure) : __expected_base(false), message_(failure.msg)
+  {
+  }
+
+  std::string message() const override
+  {
+    return message_;
+  }
+
+private:
+  std::string message_;
 };
 
 template <typename T>
