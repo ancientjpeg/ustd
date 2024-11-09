@@ -7,9 +7,9 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(Catch2)
 
-add_executable(tests
+add_executable(ustd_tests
   expected.tests.cpp
 )
 
-target_link_libraries(tests PRIVATE Catch2::Catch2WithMain ustd)
+target_link_libraries(ustd_tests PRIVATE Catch2::Catch2WithMain ustd)
 
