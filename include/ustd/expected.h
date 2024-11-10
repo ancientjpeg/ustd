@@ -70,6 +70,12 @@ public:
     return std::get<1>(value_);
   }
 
+  /* may throw std::bad_variant_access if this->ok() == false */
+  const T &operator*() const
+  {
+    return **this;
+  }
+
 private:
   std::variant<std::string, T> value_;
 };
