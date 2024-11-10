@@ -1,6 +1,6 @@
 /**
  * @file expected.h
- * @author Jackson Kaplan (jackson@minimal.audio)
+ * @author Jackson Kaplan (JwyattK@gmail.com)
  * @date 2024-11-09
  * Copyright (c) 2024. All rights reserved.
  */
