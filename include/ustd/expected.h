@@ -64,6 +64,7 @@ public:
     return value_.index() == 0 ? std::get<0>(value_) : "";
   }
 
+  /* may throw std::bad_variant_access if this->ok() == false */
   T &operator*()
   {
     return std::get<1>(value_);
